@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 
 export const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "http://localhost:4000";
+  const url = "https://food-del-backend-awri.onrender.com";
   const [token, setToken] = useState("");
 
   // now we are adding foodlist from database
