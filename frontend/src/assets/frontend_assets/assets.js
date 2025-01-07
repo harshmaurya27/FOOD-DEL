@@ -1,6 +1,7 @@
 import basket_icon from "./basket_icon.png";
 import logo from "./logo.png";
 import header_img from "./header_img.png";
+import small_header_img from "./smallbackground.jpg";
 import search_icon from "./search_icon.png";
 import menu_1 from "./menu_1.png";
 import menu_2 from "./menu_2.png";
@@ -69,6 +70,7 @@ export const assets = {
   add_icon_green,
   add_icon_white,
   remove_icon_red,
+  small_header_img,
   app_store,
   play_store,
   linkedin_icon,

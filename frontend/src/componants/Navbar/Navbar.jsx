@@ -1,9 +1,8 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/frontend_assets/assets";
 import { Link, useNavigate } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
-import axios from "axios";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("");
@@ -17,7 +16,7 @@ const Navbar = ({ setShowLogin }) => {
   return (
     <div className="navbar">
       <Link to="/">
-        <img src={assets.logo} alt="logo-image" className="logo" />
+        <h1 className="app-logo">FOOD-DEL</h1>
       </Link>
       <ul className="navbar-menu">
         <Link
@@ -50,7 +49,7 @@ const Navbar = ({ setShowLogin }) => {
         </a>
       </ul>
       <div className="navbar-right">
-        <img src={assets.search_icon} alt="search-icon" />
+        {/* <img src={assets.search_icon} alt="search-icon" /> */}
         <div className="navbar-search-icon">
           <Link to="/cart">
             <img src={assets.basket_icon} alt="basket-icon" />
@@ -58,7 +57,7 @@ const Navbar = ({ setShowLogin }) => {
           <div className={getTotalCartAmount() === 0 ? "" : "dot "}></div>
         </div>
         {!token ? (
-          <button onClick={(e) => setShowLogin(true)}>sign in</button>
+          <button onClick={() => setShowLogin(true)}>sign in</button>
         ) : (
           <div className="navbar-profile">
             <img src={assets.profile_icon} alt="" />

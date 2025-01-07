@@ -48,6 +48,14 @@ footer-content-left li,
   background-color: gray;
   border: none;
 }
+.footer-logo {
+  min-width: 200px;
+  font-size: 36px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#ef5503, hsla(36, 96%, 50%, 0.986));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @media (max-width: 750px) {
   .footer-content {

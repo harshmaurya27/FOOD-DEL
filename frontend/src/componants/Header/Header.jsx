@@ -1,4 +1,3 @@
-import React from "react";
 import "./Header.css";
 const Header = () => {
   return (
@@ -11,6 +10,7 @@ const Header = () => {
           is to satisfy your cravings and elevate your dining exprience, one
           delicious meal at a time.
         </p>
+
         <button>View Menu</button>
       </div>
     </div>

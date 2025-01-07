@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 import { assets } from "../../assets/frontend_assets/assets";
 
@@ -7,7 +6,7 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img className="footer-logo" src={assets.logo} alt="footer-logo" />
+          <h1 className="footer-logo">FOOD_DEL</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius
             illum porro commodi magnam! Alias quod vel, qui deserunt perferendis
@@ -33,13 +32,13 @@ const Footer = () => {
           <h2>GET IN TOUCH</h2>
           <ul>
             <li>+91-212-234-6453</li>
-            <li>contact@quickbite.com</li>
+            <li>contact@foodDel.com</li>
           </ul>
         </div>
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2024 © Quickbite.com - All Right Reserved.
+        copyright 2024 © foodDel.com - all right reserved.
       </p>
     </div>
   );

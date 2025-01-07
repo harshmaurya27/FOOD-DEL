@@ -4,8 +4,12 @@
   justify-content: space-between;
   align-items: center;
 }
-.navbar .logo {
-  width: 150px;
+.app-logo {
+  font-size: 36px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#ef5503, hsla(36, 96%, 50%, 0.986));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .navbar-menu {
   display: flex;
@@ -43,14 +47,17 @@
 .navbar-search-icon {
   position: relative;
 }
+.navbar-search-icon img {
+  width: 40px;
+}
 .navbar-search-icon .dot {
   position: absolute;
   min-width: 10px;
   min-height: 10px;
   background-color: tomato;
   border-radius: 5px;
-  top: -8px;
-  right: -8px;
+  top: -4px;
+  right: -6px;
 }
 .navbar-profile {
   position: relative;
@@ -84,9 +91,6 @@
   color: tomato;
 }
 @media (max-width: 1050px) {
-  .navbar .logo {
-    width: 140px;
-  }
   .navbar-menu {
     gap: 20px;
     font-size: 17px;
@@ -94,17 +98,16 @@
   .navbar-right {
     gap: 30px;
   }
-  .navbar-right img {
-    width: 22px;
-  }
+
   .navbar-right button {
     padding: 8px 25px;
   }
 }
 
 @media (max-width: 900px) {
-  .navbar .logo {
-    width: 120px;
+  .navbar .app-logo {
+    font-size: large;
+    font-weight: 800;
   }
   .navbar-menu {
     gap: 15px;
@@ -114,8 +117,9 @@
     gap: 20px;
   }
   .navbar-right img {
-    width: 20px;
+    width: 30px;
   }
+
   .navbar-right button {
     padding: 7px 20px;
     font-size: 15px;
